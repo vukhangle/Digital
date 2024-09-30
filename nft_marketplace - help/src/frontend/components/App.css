@@ -1,0 +1,341 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+body {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.bg-dark-blue {
+  background-color: #00274d;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-footer {
+  background-color: #343a40; 
+  color: #ffffff; 
+  text-align: center;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.modal-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.bg-dark-blue {
+  background-color: #1e2a38 !important;
+}
+
+.navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+}
+
+.navbar-nav .nav-link {
+  color: #c0c0c0;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+  background-color: #003366;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff;
+  background-color: #003366;
+}
+
+.btn-outline-light {
+  border-color: #ffffff;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #003366;
+}
+
+.my-listed-items-container {
+  background: #1e2a38; 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.my-listed-items-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Card */
+.my-listed-items-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.my-listed-items-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.my-listed-items-card-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.my-listed-items-card-footer {
+  background: #2c3e50; 
+  color: #ffffff; 
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
+
+.my-listed-items-card-body {
+  padding: 15px;
+  color: #ffffff;
+  background: #34495e;
+  border-radius: 0 0 15px 15px;
+}
+
+
+.my-listed-items-modal-content {
+  border-radius: 15px;
+  background: #1e2a38;
+  color: #ffffff; 
+}
+
+.my-listed-items-modal-header {
+  border-bottom: none;
+  background-color: #34495e;
+  
+}
+
+.my-listed-items-modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.my-listed-items-modal-body {
+  padding: 20px;
+  background-color: #1e2a38;
+}
+
+.my-listed-items-modal-footer {
+  border-top: none;
+  background-color: #34495e;
+
+}
+
+/* Loading */
+.my-listed-items-loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1e2a38; /* Xanh đậm */
+  color: #ffffff; /* Trắng */
+}
+
+.my-listed-items-loading-container h2 {
+  font-size: 2rem;
+}
+
+/* Ensure Navbar buttons are rounded */
+.btn-outline-light.rounded-pill {
+  border-radius: 50px;
+}
+
+/* Increase font size for brand */
+.navbar-brand .fs-3 {
+  font-size: 1.75rem;
+}
+
+.search-input-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.search-input {
+  padding-left: 2.5rem; 
+  border-radius: 30px; 
+  border: 1px solid #ced4da;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(38, 143, 255, 0.5); 
+}
+
+.search-input::placeholder {
+  color: #6c757d; 
+  opacity: 1; 
+}
+
+.search-input-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 20px; 
+  height: 20px; 
+  background: #007bff; 
+  border-radius: 50%; 
+  opacity: 0.2;
+  transition: all 0.3s ease; 
+}
+
+.search-input-container:hover::before {
+  opacity: 0.4;
+}
+.my-purchases-container {
+  background: #1e2a38;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.my-purchases-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.my-purchases-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.my-purchases-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.my-purchases-card-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.my-purchases-card-footer {
+  background: #2c3e50;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
+
+.my-purchases-modal-content {
+  border-radius: 15px;
+  background: #1e2a38;
+  color: #ffffff;
+}
+
+.my-purchases-modal-header {
+  border-bottom: none;
+  background: #2c3e50;
+  }
+
+.my-purchases-modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+.my-purchases-modal-body {
+  padding: 20px;
+  background: #003366;
+
+}
+
+.my-purchases-modal-footer {
+  border-top: none;
+  background: #2c3e50;
+
+
+}
+
+.my-purchases-loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1e2a38;
+  color: #ffffff;
+}
+
+
